@@ -11,14 +11,39 @@
         <script src="js/jquery-1.11.3.js"></script>
         <script src="js/bootstrap.js"></script>
         <style media="screen">
-            .carousel {
-                height: 540px;
-                background-color: #000;
+            @media (min-width: 992px) {
+                .carousel {
+                    height: 540px;
+                    background-color: #000;
+                }
+                .carousel .item{
+                    height: 540px;
+                    background-color: #000;
+                }
             }
-            .carousel .item{
-                height: 540px;
-                background-color: #000;
+
+            @media (min-width: 501px) and (max-width:991px) {
+                .carousel {
+                    height: 440px;
+                    background-color: #000;
+                }
+                .carousel .item{
+                    height: 440px;
+                    background-color: #000;
+                }
             }
+
+            @media (max-width: 500px) {
+                .carousel {
+                    height: 270px;
+                    background-color: #000;
+                }
+                .carousel .item{
+                    height: 270px;
+                    background-color: #000;
+                }
+            }
+
             .carousel-inner .img{
                 width: 100%;
             }

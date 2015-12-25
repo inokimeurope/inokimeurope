@@ -9,6 +9,31 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
+@media (min-width:992px) {
+    .sharebox {
+        position:fixed;
+        left:0px;
+        top:300px;
+        z-index:23;
+    }
+}
+@media (max-width:400px) {
+    .sharebox {
+        position:fixed;
+        left:0px;
+        top:100px;
+        z-index:23;
+    }
+}
+@media (min-width:401px) and (max-width:991px) {
+    .sharebox {
+        position:fixed;
+        left:0px;
+        top:200px;
+        z-index:23;
+    }
+}
+
 .social-icons a {
     color: #fff;
     width: 40px;
